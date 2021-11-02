@@ -1,0 +1,27 @@
+//        first years
+        Student s11 = new Student("Luigi", "11", Year.FIRST);
+        Student s12 = new Student("Betty", "12", Year.FIRST);
+        Student s13 = new Student("Theo", "13", Year.FIRST);
+        Student s14 = new Student("Salamanca", "14", Year.FIRST);
+        Student s15 = new Student("Faye", "15", Year.FIRST);
+
+//        second years
+        Student s21 = new Student("Yoshi", "21", Year.SECOND);
+        Student s22 = new Student("Maria", "22", Year.SECOND);
+        Student s23 = new Student("Adele", "23", Year.SECOND);
+        Student s24 = new Student("Lee", "24", Year.SECOND);
+        Student s25 = new Student("Joe", "25", Year.SECOND);
+
+//        third years
+        Student s31 = new Student("Rosalina", "31", Year.THIRD);
+        Student s32 = new Student("Homie", "32", Year.THIRD);
+        Student s33 = new Student("Bodie", "33", Year.THIRD);
+        Student s34 = new Student("Sarah", "34", Year.THIRD);
+        Student s35 = new Student("Pooth", "35", Year.THIRD);
+
+//        fourth years
+        Student s41 = new Student("Wario", "41", Year.FOURTH);
+        Student s42 = new Student("Grace", "42", Year.FOURTH);
+        Student s43 = new Student("Valentine", "43", Year.FOURTH);
+        Student s44 = new Student("Spike", "44", Year.FOURTH);
+        Student s45 = new Student("Paul", "45", Year.FOURTH);
