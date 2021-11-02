@@ -1,29 +1,26 @@
 package com.company;
 
-public class Student {
+import java.util.List;
+import java.util.stream.DoubleStream;
+
+public class Student implements Nameable{
     private String name;
     private String id;
-    private Year year;
+    List<Double> grades;
 
-    public Student(String name, String id, Year year) {
+    public Student(String name, String id, List<Double> grades) {
         this.name = name;
         this.id = id;
-        this.year = year;
+        this.grades = grades;
     }
 
-    public void setYear(Year year) {
-        this.year = year;
+    public double getAverageGrade () {
+        return this.grades.stream().mapToDouble(grade -> grade).average().getAsDouble();
     }
 
+    @Override
     public String getName() {
         return name;
     }
 
-    public String getId() {
-        return id;
-    }
-
-    public Year getYear() {
-        return year;
-    }
 }

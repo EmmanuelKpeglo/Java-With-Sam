@@ -1,23 +1,26 @@
 package com.company;
 
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+
 public class Lecturer {
     private String name;
-    private Courses courses;
+    private List<Student> student = new ArrayList<>();
 
-    public Lecturer(String name, Courses courses) {
+    public Lecturer(String name) {
         this.name = name;
-        this.courses = courses;
     }
 
-    public void setSubjects(Courses courses) {
-        this.courses = courses;
+    public void Enter (Student student) {
+        this.student.add(student);
     }
 
-    public String getName() {
-        return name;
+    public double getHighestAverageGrade () {
+        return this.student.stream().map(Student::getAverageGrade).max(Comparator.comparing(Double::valueOf)).get();
     }
 
-    public Courses getSubjects() {
-        return courses;
+    public List<Student> getStudent() {
+        return student;
     }
 }
